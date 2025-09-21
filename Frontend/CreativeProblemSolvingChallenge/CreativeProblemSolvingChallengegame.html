@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CreativeProblemSolvingChallengegame.css">
+    <script type = "module" src="CreativeProblemSolvingChallengegame.js" defer></script>
+    <title>Creative Problem-Solving Challenge</title>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="game-screen active">
+            <h1>Creative Problem-Solving Challenge</h1>
+            <p class="subtitle">Test your creativity, innovation, and divergent thinking</p>
+            
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 15px; margin: 25px 0; text-align: left;">
+                <h3 style="color: #495057; margin-bottom: 15px; text-align: center;">What We'll Measure</h3>
+                <ul style="color: #6c757d; line-height: 1.8; list-style-position: inside;">
+                    <li><strong>Fluency:</strong> Number of unique solutions you generate</li>
+                    <li><strong>Originality:</strong> How novel and unexpected your ideas are</li>
+                    <li><strong>Elaboration:</strong> Detail and development of your solutions</li>
+                    <li><strong>Flexibility:</strong> Variety across different categories and approaches</li>
+                    <li><strong>Creative Actions:</strong> Your experimentation with unconventional approaches</li>
+                </ul>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 20px; border-radius: 15px; margin: 20px 0;">
+                <h3 style="margin-bottom: 10px;">Challenge Types</h3>
+                <p style="margin-bottom: 15px;">You'll encounter various creative challenges:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: left;">
+                    <div>
+                        <strong>🔧 Alternative Uses</strong><br>
+                        <small>Find unusual applications for everyday objects</small>
+                    </div>
+                    <div>
+                        <strong>🌟 Scenario Solving</strong><br>
+                        <small>Creative solutions to hypothetical problems</small>
+                    </div>
+                    <div>
+                        <strong>🎮 Interactive Sandbox</strong><br>
+                        <small>Manipulate objects to create solutions</small>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-primary" onclick="startGame()" style="font-size: 1.2em; padding: 15px 40px;">Start Creative Challenge</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="game-screen">
+            <div class="progress-section">
+                <div class="progress-info">
+                    <span id="challenge-counter">Challenge 1 of 5</span>
+                </div>
+                <div class="timer" id="timer">Time: 5:00</div>
+            </div>
+
+            <div class="challenge-display" id="challenge-display">
+                <div class="challenge-title" id="challenge-title">Loading Challenge...</div>
+                <div class="challenge-description" id="challenge-description"></div>
+                <div class="challenge-type" id="challenge-type"></div>
+            </div>
+
+            <div id="interactive-area" class="interactive-area" style="display: none;">
+                <h4 style="color: #495057; margin-bottom: 15px;">Interactive Sandbox Environment</h4>
+                <div class="sandbox-environment" id="sandbox-objects">
+                    <!-- Objects will be dynamically generated -->
+                </div>
+                <div style="display: flex; gap: 20px; margin-top: 20px;">
+                    <div class="drop-zone" id="solution-zone">Drop objects here to create solutions</div>
+                    <div class="drop-zone" id="experiment-zone">Experiment area</div>
+                </div>
+            </div>
+
+            <div class="solution-input-area">
+                <textarea 
+                    id="solution-input" 
+                    class="solution-input" 
+                    placeholder="Describe your creative solution in detail... The more detailed and original, the better your elaboration and novelty scores!"
+                    maxlength="500">
+                </textarea>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                    <small style="color: #6c757d;">
+                        Characters: <span id="char-count">0</span>/500
+                    </small>
+                    <button class="btn-secondary" onclick="addSolution()">Add Solution</button>
+                </div>
+            </div>
+
+            <div class="solution-list" id="solution-list">
+                <h4 style="color: #495057; margin-bottom: 15px;">Your Solutions (<span id="solution-count">0</span>)</h4>
+                <div id="solutions-container">
+                    <p style="color: #6c757d; font-style: italic;">No solutions added yet. Start brainstorming!</p>
+                </div>
+            </div>
+
+            <div class="actions-log">
+                <h5 style="color: #495057; margin-bottom: 10px;">Activity Log</h5>
+                <div id="actions-container">
+                    <div class="action-item">Game started - Begin exploring creative solutions!</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn-primary" onclick="nextChallenge()">Next Challenge</button>
+                <button class="btn-secondary" onclick="skipChallenge()">Skip This Challenge</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="game-screen">
+            <h1>Your Creativity Profile</h1>
+            <p class="subtitle">Creative Problem-Solving Assessment Complete</p>
+
+            <div class="results-grid" id="results-grid">
+                <!-- Results will be dynamically generated -->
+            </div>
+
+            <div class="creativity-radar">
+                <h3 style="text-align: center; color: #495057; margin-bottom: 20px;">Creativity Dimensions</h3>
+                <div id="creativity-dimensions">
+                    <!-- Dimensions will be generated -->
+                </div>
+            </div>
+
+            <!-- Navigation Section -->
+            <div class="navigation-section">
+                <h3>Assessment Progress</h3>
+                <div class="progress-indicator">
+                    <div class="step completed">1. Balloon Pump</div>
+                    <div class="step completed">2. Memory & Attention</div>
+                    <div class="step completed">3. Emotion Recognition</div>
+                    <div class="step current">4. Creative Problem Solving</div>
+                    <div class="step">5. Open-Ended Questions</div>
+                </div>
+                <button class="btn-next" onclick="proceedToNextGame()" id="nextGameBtn">
+                    ➡️ Next: Open-Ended Questions
+                </button>
+            </div>
+
+            <div class="export-section">
+                <h3 style="color: #495057; margin-bottom: 15px;">Export Your Creative Profile</h3>
+                <p style="color: #6c757d; margin-bottom: 20px;">Download your detailed creativity assessment data</p>
+                <button class="btn-secondary" onclick="exportJSON()">Export as JSON</button>
+                <button class="btn-secondary" onclick="exportCSV()">Export as CSV</button>
+            </div>
+
+            <button class="btn-primary" onclick="restartGame()">Take Another Challenge</button>
+        </div>
+    </div>
+</body>
+</html>

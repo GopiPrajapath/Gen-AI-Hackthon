@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Memory_Attention_Game.css">
+    <script type="module" src="Memory_Attention_Game.js" defer></script>
+    <title>Memory & Attention Game</title>
+    
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">Memory & Attention Game</h1>
+            <div class="game-stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="round-counter">1</div>
+                    <div class="stat-label">Round</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="accuracy-rate">0%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="error-count">0</div>
+                    <div class="stat-label">Errors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="avg-time">0.0s</div>
+                    <div class="stat-label">Avg Time</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-phase" id="phase-display">Get Ready!</div>
+        <div class="timer" id="timer-display"></div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+
+        <div id="sequence-container" class="sequence-display"></div>
+        <div id="recall-area" class="recall-area hidden">
+            <p>Click the items in the correct order:</p>
+        </div>
+
+        <div class="control-buttons">
+            <button class="btn btn-primary" id="start-btn" onclick="startGame()">Start Game</button>
+            <button class="btn btn-secondary" id="submit-btn" onclick="submitRecall()" disabled>Submit Answer</button>
+            <button class="btn btn-secondary" id="clear-btn" onclick="clearRecall()" disabled>Clear</button>
+            <button class="btn btn-danger" id="export-btn" onclick="exportData()" disabled>Export Data</button>
+        </div>
+
+        <div id="results-panel" class="results-panel hidden">
+            <h3 class="results-title">Game Results</h3>
+            <div id="results-content"></div>
+        </div>
+
+        <!-- Navigation Section -->
+        <div class="navigation-section">
+            <h3>Assessment Progress</h3>
+            <div class="progress-indicator">
+                <div class="step completed">1. Balloon Pump</div>
+                <div class="step current">2. Memory & Attention</div>
+                <div class="step">3. Emotion Recognition</div>
+                <div class="step">4. Creative Problem Solving</div>
+                <div class="step">5. Open-Ended Questions</div>
+            </div>
+            <button class="btn btn-next" onclick="proceedToNextGame()" id="nextGameBtn" style="display: none;">
+                ➡️ Next: Emotion Recognition Game
+            </button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

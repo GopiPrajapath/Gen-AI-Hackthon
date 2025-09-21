@@ -1,0 +1,266 @@
+/* Balloon Pump Game Stylesheet */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .game-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .game-title {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .game-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .balloon-container {
+            margin: 30px 0;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .balloon {
+            width: 80px;
+            height: 100px;
+            background: radial-gradient(circle at 30% 30%, #ff6b6b, #e55656);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: relative;
+            transition: all 0.3s ease;
+            transform-origin: bottom center;
+        }
+
+        .balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 30px;
+            background: #333;
+        }
+
+        .balloon.popped {
+            animation: pop 0.5s ease-out;
+            background: transparent !important;
+        }
+
+        @keyframes pop {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.5; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+
+        .explosion {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            animation: explode 0.5s ease-out;
+            pointer-events: none;
+        }
+
+        @keyframes explode {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(1.5); }
+        }
+
+        .controls {
+            margin: 30px 0;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            margin: 0 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .pump-btn {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+        }
+
+        .pump-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        .cashout-btn {
+            background: linear-gradient(45deg, #ff9800, #e68900);
+            color: white;
+        }
+
+        .cashout-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .current-reward {
+            font-size: 2em;
+            color: #4CAF50;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .round-info {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .data-export {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .export-btn {
+            background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+        }
+
+        .message {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .success { background: #d4edda; color: #155724; }
+        .danger { background: #f8d7da; color: #721c24; }
+        .info { background: #d1ecf1; color: #0c5460; }
+
+/* Navigation Styles */
+.navigation-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border: 2px solid #e9ecef;
+}
+
+.navigation-section h3 {
+    color: #495057;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.step {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    background: #e9ecef;
+    color: #6c757d;
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+}
+
+.step.completed {
+    background: linear-gradient(135deg, #4ecdc4, #45b7d1);
+    color: white;
+}
+
+.step.current {
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    color: white;
+}
+
+.btn-next {
+    background: linear-gradient(135deg, #4ecdc4, #45b7d1);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn-next:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.3);
+}
+
+@media (max-width: 600px) {
+    .btn { margin: 5px; padding: 12px 20px; font-size: 16px; }
+    .game-title { font-size: 2em; }
+    .progress-indicator {
+        flex-direction: column;
+    }
+    .step {
+        min-width: auto;
+        width: 100%;
+    }
+}

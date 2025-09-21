@@ -1,0 +1,1799 @@
+{
+  "timestamp": "2025-09-21T16:26:20.957Z",
+  "assessmentData": {
+    "balloon_pump_game_results": [
+      {
+        "id": "3kGgukGctnZS9udgHKRs",
+        "timestamp": "2025-09-21T15:59:43.583Z",
+        "userId": "user_1758470383583",
+        "analysis": {
+          "averageDecisionTime": 422.64513888888894,
+          "averagePumpsPerRound": 3.75,
+          "behaviorChange": "More risk-averse over time",
+          "totalRounds": 8,
+          "popRate": "37.5%"
+        },
+        "gameVersion": "1.0",
+        "formattedData": {
+          "balloon_pump_game": {
+            "number_of_pumps_per_round": [
+              0,
+              8,
+              4,
+              6,
+              4,
+              3,
+              1,
+              4
+            ],
+            "balloon_pop_count": 3,
+            "behavior_change_pattern": "increasingly_cautious",
+            "decision_time_seconds": [
+              0,
+              4.876,
+              1.181,
+              3.239,
+              1.763,
+              2.269,
+              1.155,
+              2.094
+            ],
+            "cash_out_point_value": [
+              0,
+              80,
+              0,
+              0,
+              0,
+              30,
+              10,
+              40
+            ]
+          }
+        },
+        "gameType": "Balloon Pump Game",
+        "gameData": {
+          "totalScore": 160,
+          "gameStartTime": 1758470198233,
+          "rounds": [
+            {
+              "popped": false,
+              "decisionTimes": [],
+              "pumps": 0,
+              "burstThreshold": 5,
+              "cashOutValue": 0,
+              "roundNumber": 1,
+              "roundStartTime": 1758470198233
+            },
+            {
+              "cashOutValue": 80,
+              "pumps": 8,
+              "roundNumber": 2,
+              "roundStartTime": 1758470349751,
+              "burstThreshold": 13,
+              "popped": false,
+              "decisionTimes": [
+                687,
+                466,
+                430,
+                430,
+                360,
+                405,
+                355,
+                713,
+                1030
+              ]
+            },
+            {
+              "roundNumber": 3,
+              "decisionTimes": [
+                503,
+                198,
+                232,
+                248
+              ],
+              "roundStartTime": 1758470356645,
+              "cashOutValue": 0,
+              "popped": true,
+              "burstThreshold": 4,
+              "pumps": 4
+            },
+            {
+              "roundNumber": 4,
+              "roundStartTime": 1758470359841,
+              "burstThreshold": 6,
+              "cashOutValue": 0,
+              "pumps": 6,
+              "popped": true,
+              "decisionTimes": [
+                1171,
+                455,
+                433,
+                393,
+                388,
+                399
+              ]
+            },
+            {
+              "pumps": 4,
+              "roundNumber": 5,
+              "decisionTimes": [
+                510,
+                577,
+                355,
+                321
+              ],
+              "popped": true,
+              "cashOutValue": 0,
+              "roundStartTime": 1758470365091,
+              "burstThreshold": 4
+            },
+            {
+              "roundNumber": 6,
+              "burstThreshold": 4,
+              "cashOutValue": 30,
+              "decisionTimes": [
+                466,
+                295,
+                336,
+                1172
+              ],
+              "pumps": 3,
+              "popped": false,
+              "roundStartTime": 1758470368867
+            },
+            {
+              "burstThreshold": 3,
+              "decisionTimes": [
+                520,
+                635
+              ],
+              "roundNumber": 7,
+              "popped": false,
+              "pumps": 1,
+              "cashOutValue": 10,
+              "roundStartTime": 1758470373152
+            },
+            {
+              "burstThreshold": 13,
+              "pumps": 4,
+              "decisionTimes": [
+                508,
+                348,
+                276,
+                286,
+                676
+              ],
+              "cashOutValue": 40,
+              "roundStartTime": 1758470376318,
+              "roundNumber": 8,
+              "popped": false
+            }
+          ],
+          "totalPops": 3,
+          "currentRound": 9
+        }
+      }
+    ],
+    "creative_problem_solving_results": [
+      {
+        "id": "rIkA2DKj4dcUe7CajOGz",
+        "timestamp": "2025-09-21T16:05:25.464Z",
+        "rawData": {
+          "originalityScores": [
+            {
+              "challengeId": 1,
+              "noveltyScore": 100
+            },
+            {
+              "challengeId": 2,
+              "noveltyScore": 100
+            },
+            {
+              "noveltyScore": 100,
+              "challengeId": 3
+            },
+            {
+              "noveltyScore": 100,
+              "challengeId": 4
+            }
+          ],
+          "solutionFluency": [
+            {
+              "solutionCount": 1,
+              "challengeId": 1
+            },
+            {
+              "solutionCount": 1,
+              "challengeId": 2
+            },
+            {
+              "challengeId": 3,
+              "solutionCount": 1
+            },
+            {
+              "solutionCount": 1,
+              "challengeId": 4
+            },
+            {
+              "challengeId": 5,
+              "solutionCount": 0
+            }
+          ],
+          "interactiveActions": [
+            {
+              "object": "🕶️",
+              "action": "drag_start",
+              "timestamp": "2025-09-21T16:03:56.699Z",
+              "challengeId": 2
+            },
+            {
+              "action": "dropped_in_solution",
+              "timestamp": "2025-09-21T16:03:57.330Z",
+              "challengeId": 2,
+              "object": "🕶️"
+            },
+            {
+              "timestamp": "2025-09-21T16:05:00.082Z",
+              "action": "drag_start",
+              "object": "🖊️",
+              "challengeId": 4
+            },
+            {
+              "challengeId": 4,
+              "timestamp": "2025-09-21T16:05:00.826Z",
+              "object": "🖊️",
+              "action": "dropped_in_experiment"
+            }
+          ],
+          "elaborationScores": [
+            {
+              "challengeId": 1,
+              "elaborationScore": 70
+            },
+            {
+              "challengeId": 2,
+              "elaborationScore": 25
+            },
+            {
+              "challengeId": 3,
+              "elaborationScore": 45
+            },
+            {
+              "elaborationScore": 5,
+              "challengeId": 4
+            }
+          ]
+        },
+        "gameType": "Creative Problem Solving Challenge",
+        "gameVersion": "1.0",
+        "summary": {
+          "averageElaborationScore": 36.25,
+          "totalInteractions": 4,
+          "totalSolutions": 4,
+          "averageNoveltyScore": 100
+        },
+        "gameData": {
+          "totalGameTime": 163349,
+          "endTime": "2025-09-21T16:05:21.515Z",
+          "totalActions": 4,
+          "challenges": [
+            {
+              "startTime": "2025-09-21T16:02:38.166Z",
+              "timeSpent": 75422,
+              "challengeId": 1,
+              "type": "Alternative Uses",
+              "endTime": "2025-09-21T16:03:53.588Z",
+              "title": "Creative Uses for a Paperclip",
+              "solutions": [
+                {
+                  "timestamp": "2025-09-21T16:03:50.681Z",
+                  "elaborationScore": 70,
+                  "categoryTags": [
+                    "creative",
+                    "survival"
+                  ],
+                  "noveltyScore": 100,
+                  "id": 1758470630681,
+                  "text": "We can make a fishing string by using 100 paperclips and attach a fish food to the end and survive in the island."
+                }
+              ],
+              "interactiveActions": [],
+              "actions": [
+                {
+                  "type": "challenge",
+                  "challengeId": 1,
+                  "timestamp": "2025-09-21T16:02:38.166Z",
+                  "description": "Started challenge: Creative Uses for a Paperclip"
+                },
+                {
+                  "type": "system",
+                  "challengeId": 1,
+                  "timestamp": "2025-09-21T16:02:38.201Z",
+                  "description": "Game started"
+                },
+                {
+                  "challengeId": 1,
+                  "type": "solution",
+                  "description": "Added solution: \"We can make a fishing string by using 100 papercli...\"",
+                  "timestamp": "2025-09-21T16:03:50.682Z"
+                }
+              ]
+            },
+            {
+              "title": "Desert Island Survival",
+              "challengeId": 2,
+              "type": "Scenario Solving",
+              "startTime": "2025-09-21T16:03:53.588Z",
+              "timeSpent": 31915,
+              "interactiveActions": [
+                {
+                  "object": "🕶️",
+                  "action": "drag_start",
+                  "challengeId": 2,
+                  "timestamp": "2025-09-21T16:03:56.699Z"
+                },
+                {
+                  "timestamp": "2025-09-21T16:03:57.330Z",
+                  "object": "🕶️",
+                  "action": "dropped_in_solution",
+                  "challengeId": 2
+                }
+              ],
+              "actions": [
+                {
+                  "type": "challenge",
+                  "challengeId": 2,
+                  "timestamp": "2025-09-21T16:03:53.589Z",
+                  "description": "Started challenge: Desert Island Survival"
+                },
+                {
+                  "timestamp": "2025-09-21T16:03:56.699Z",
+                  "description": "drag start 🕶️",
+                  "type": "interaction",
+                  "challengeId": 2
+                },
+                {
+                  "challengeId": 2,
+                  "timestamp": "2025-09-21T16:03:57.330Z",
+                  "description": "dropped in_solution 🕶️",
+                  "type": "interaction"
+                },
+                {
+                  "type": "solution",
+                  "description": "Added solution: \"Use the sunglasses for the survival on the island.\"",
+                  "challengeId": 2,
+                  "timestamp": "2025-09-21T16:04:23.321Z"
+                }
+              ],
+              "endTime": "2025-09-21T16:04:25.503Z",
+              "solutions": [
+                {
+                  "categoryTags": [
+                    "practical"
+                  ],
+                  "noveltyScore": 100,
+                  "text": "Use the sunglasses for the survival on the island.",
+                  "id": 1758470663321,
+                  "elaborationScore": 25,
+                  "timestamp": "2025-09-21T16:04:23.321Z"
+                }
+              ]
+            },
+            {
+              "type": "Alternative Uses",
+              "endTime": "2025-09-21T16:04:56.894Z",
+              "solutions": [
+                {
+                  "text": "I would create a game using the bricks in a prank",
+                  "timestamp": "2025-09-21T16:04:54.863Z",
+                  "noveltyScore": 100,
+                  "elaborationScore": 45,
+                  "id": 1758470694863,
+                  "categoryTags": [
+                    "creative",
+                    "entertainment"
+                  ]
+                }
+              ],
+              "interactiveActions": [],
+              "title": "Reimagining a Brick",
+              "challengeId": 3,
+              "actions": [
+                {
+                  "challengeId": 3,
+                  "type": "challenge",
+                  "description": "Started challenge: Reimagining a Brick",
+                  "timestamp": "2025-09-21T16:04:25.503Z"
+                },
+                {
+                  "challengeId": 3,
+                  "description": "Added solution: \"I would create a game using the bricks in a prank\"",
+                  "timestamp": "2025-09-21T16:04:54.863Z",
+                  "type": "solution"
+                }
+              ],
+              "timeSpent": 31391,
+              "startTime": "2025-09-21T16:04:25.503Z"
+            },
+            {
+              "interactiveActions": [
+                {
+                  "timestamp": "2025-09-21T16:05:00.082Z",
+                  "challengeId": 4,
+                  "object": "🖊️",
+                  "action": "drag_start"
+                },
+                {
+                  "challengeId": 4,
+                  "timestamp": "2025-09-21T16:05:00.826Z",
+                  "action": "dropped_in_experiment",
+                  "object": "🖊️"
+                }
+              ],
+              "type": "Interactive Sandbox",
+              "title": "Office Supply Innovation Lab",
+              "solutions": [
+                {
+                  "elaborationScore": 5,
+                  "timestamp": "2025-09-21T16:05:14.225Z",
+                  "text": "Describe something",
+                  "id": 1758470714225,
+                  "noveltyScore": 100,
+                  "categoryTags": [
+                    "general"
+                  ]
+                }
+              ],
+              "timeSpent": 20558,
+              "actions": [
+                {
+                  "challengeId": 4,
+                  "timestamp": "2025-09-21T16:04:56.894Z",
+                  "description": "Started challenge: Office Supply Innovation Lab",
+                  "type": "challenge"
+                },
+                {
+                  "challengeId": 4,
+                  "description": "drag start 🖊️",
+                  "timestamp": "2025-09-21T16:05:00.082Z",
+                  "type": "interaction"
+                },
+                {
+                  "challengeId": 4,
+                  "description": "dropped in_experiment 🖊️",
+                  "type": "interaction",
+                  "timestamp": "2025-09-21T16:05:00.826Z"
+                },
+                {
+                  "type": "solution",
+                  "challengeId": 4,
+                  "description": "Added solution: \"Describe something\"",
+                  "timestamp": "2025-09-21T16:05:14.226Z"
+                }
+              ],
+              "endTime": "2025-09-21T16:05:17.452Z",
+              "startTime": "2025-09-21T16:04:56.894Z",
+              "challengeId": 4
+            },
+            {
+              "challengeId": 5,
+              "solutions": [],
+              "interactiveActions": [],
+              "type": "Scenario Solving",
+              "actions": [
+                {
+                  "type": "challenge",
+                  "description": "Started challenge: Time Travel Communication",
+                  "challengeId": 5,
+                  "timestamp": "2025-09-21T16:05:17.453Z"
+                },
+                {
+                  "timestamp": "2025-09-21T16:05:21.515Z",
+                  "type": "navigation",
+                  "challengeId": 5,
+                  "description": "Skipped challenge: Time Travel Communication"
+                }
+              ],
+              "title": "Time Travel Communication",
+              "timeSpent": 4062,
+              "endTime": "2025-09-21T16:05:21.515Z",
+              "startTime": "2025-09-21T16:05:17.453Z"
+            }
+          ],
+          "startTime": "2025-09-21T16:02:35.862Z",
+          "sessionActions": [
+            {
+              "description": "Started challenge: Creative Uses for a Paperclip",
+              "challengeId": 1,
+              "timestamp": "2025-09-21T16:02:38.166Z",
+              "type": "challenge"
+            },
+            {
+              "description": "Game started",
+              "type": "system",
+              "challengeId": 1,
+              "timestamp": "2025-09-21T16:02:38.201Z"
+            },
+            {
+              "type": "solution",
+              "challengeId": 1,
+              "timestamp": "2025-09-21T16:03:50.682Z",
+              "description": "Added solution: \"We can make a fishing string by using 100 papercli...\""
+            },
+            {
+              "type": "challenge",
+              "challengeId": 2,
+              "description": "Started challenge: Desert Island Survival",
+              "timestamp": "2025-09-21T16:03:53.589Z"
+            },
+            {
+              "type": "interaction",
+              "challengeId": 2,
+              "timestamp": "2025-09-21T16:03:56.699Z",
+              "description": "drag start 🕶️"
+            },
+            {
+              "challengeId": 2,
+              "type": "interaction",
+              "description": "dropped in_solution 🕶️",
+              "timestamp": "2025-09-21T16:03:57.330Z"
+            },
+            {
+              "challengeId": 2,
+              "timestamp": "2025-09-21T16:04:23.321Z",
+              "description": "Added solution: \"Use the sunglasses for the survival on the island.\"",
+              "type": "solution"
+            },
+            {
+              "type": "challenge",
+              "timestamp": "2025-09-21T16:04:25.503Z",
+              "challengeId": 3,
+              "description": "Started challenge: Reimagining a Brick"
+            },
+            {
+              "description": "Added solution: \"I would create a game using the bricks in a prank\"",
+              "timestamp": "2025-09-21T16:04:54.863Z",
+              "challengeId": 3,
+              "type": "solution"
+            },
+            {
+              "type": "challenge",
+              "timestamp": "2025-09-21T16:04:56.894Z",
+              "challengeId": 4,
+              "description": "Started challenge: Office Supply Innovation Lab"
+            },
+            {
+              "challengeId": 4,
+              "timestamp": "2025-09-21T16:05:00.082Z",
+              "type": "interaction",
+              "description": "drag start 🖊️"
+            },
+            {
+              "type": "interaction",
+              "description": "dropped in_experiment 🖊️",
+              "timestamp": "2025-09-21T16:05:00.826Z",
+              "challengeId": 4
+            },
+            {
+              "type": "solution",
+              "challengeId": 4,
+              "timestamp": "2025-09-21T16:05:14.226Z",
+              "description": "Added solution: \"Describe something\""
+            },
+            {
+              "type": "challenge",
+              "description": "Started challenge: Time Travel Communication",
+              "timestamp": "2025-09-21T16:05:17.453Z",
+              "challengeId": 5
+            },
+            {
+              "timestamp": "2025-09-21T16:05:21.515Z",
+              "description": "Skipped challenge: Time Travel Communication",
+              "type": "navigation",
+              "challengeId": 5
+            }
+          ],
+          "sessionId": "1758470555862"
+        },
+        "userId": "user_1758470725464",
+        "gameMetadata": {
+          "totalChallenges": 5,
+          "gameVersion": "1.0",
+          "completedAt": "2025-09-21T16:05:25.463Z",
+          "sessionId": "1758470555862"
+        }
+      }
+    ],
+    "emotional_recognition_results": [
+      {
+        "id": "VnhRxNL8I1hD1GKUhVVl",
+        "summary": {
+          "overallAccuracy": 70,
+          "correctAnswers": 14,
+          "averageResponseTime": 2.77515,
+          "totalQuestions": 20
+        },
+        "gameType": "Emotion Recognition Game",
+        "responses": [
+          {
+            "timestamp": "2025-09-21T16:01:30.563Z",
+            "responseTime": 10366,
+            "difficulty": "complex",
+            "correctEmotion": "embarrassed",
+            "stimulusType": "scenario",
+            "emotionCategory": "negative",
+            "questionNumber": 1,
+            "isCorrect": true,
+            "selectedEmotion": "embarrassed"
+          },
+          {
+            "timestamp": "2025-09-21T16:01:35.845Z",
+            "difficulty": "complex",
+            "correctEmotion": "relieved",
+            "questionNumber": 2,
+            "isCorrect": true,
+            "stimulusType": "scenario",
+            "responseTime": 4264,
+            "selectedEmotion": "relieved",
+            "emotionCategory": "positive"
+          },
+          {
+            "selectedEmotion": "curious",
+            "difficulty": "subtle",
+            "stimulusType": "scenario",
+            "correctEmotion": "curious",
+            "isCorrect": true,
+            "questionNumber": 3,
+            "responseTime": 11904,
+            "timestamp": "2025-09-21T16:01:48.514Z",
+            "emotionCategory": "neutral"
+          },
+          {
+            "responseTime": 2578,
+            "difficulty": "complex",
+            "emotionCategory": "negative",
+            "selectedEmotion": "envious",
+            "isCorrect": true,
+            "timestamp": "2025-09-21T16:01:51.941Z",
+            "stimulusType": "face",
+            "questionNumber": 4,
+            "correctEmotion": "envious"
+          },
+          {
+            "selectedEmotion": "sad",
+            "isCorrect": true,
+            "questionNumber": 5,
+            "difficulty": "basic",
+            "responseTime": 1786,
+            "timestamp": "2025-09-21T16:01:54.719Z",
+            "correctEmotion": "sad",
+            "stimulusType": "face",
+            "emotionCategory": "negative"
+          },
+          {
+            "emotionCategory": "negative",
+            "correctEmotion": "disappointed",
+            "timestamp": "2025-09-21T16:01:57.277Z",
+            "selectedEmotion": "relieved",
+            "difficulty": "complex",
+            "isCorrect": false,
+            "stimulusType": "face",
+            "responseTime": 1824,
+            "questionNumber": 6
+          },
+          {
+            "correctEmotion": "nostalgic",
+            "difficulty": "subtle",
+            "timestamp": "2025-09-21T16:01:59.399Z",
+            "stimulusType": "scenario",
+            "selectedEmotion": "relieved",
+            "isCorrect": false,
+            "questionNumber": 7,
+            "responseTime": 1124,
+            "emotionCategory": "neutral"
+          },
+          {
+            "responseTime": 2696,
+            "correctEmotion": "proud",
+            "selectedEmotion": "relieved",
+            "emotionCategory": "positive",
+            "difficulty": "complex",
+            "timestamp": "2025-09-21T16:02:02.933Z",
+            "stimulusType": "face",
+            "questionNumber": 8,
+            "isCorrect": false
+          },
+          {
+            "emotionCategory": "neutral",
+            "stimulusType": "scenario",
+            "correctEmotion": "resigned",
+            "timestamp": "2025-09-21T16:02:05.834Z",
+            "selectedEmotion": "resigned",
+            "difficulty": "subtle",
+            "isCorrect": true,
+            "responseTime": 873,
+            "questionNumber": 9
+          },
+          {
+            "difficulty": "complex",
+            "correctEmotion": "guilty",
+            "isCorrect": false,
+            "timestamp": "2025-09-21T16:02:07.090Z",
+            "emotionCategory": "negative",
+            "responseTime": 665,
+            "questionNumber": 10,
+            "selectedEmotion": "embarrassed",
+            "stimulusType": "face"
+          },
+          {
+            "emotionCategory": "negative",
+            "timestamp": "2025-09-21T16:02:08.450Z",
+            "questionNumber": 11,
+            "stimulusType": "face",
+            "correctEmotion": "contempt",
+            "responseTime": 662,
+            "selectedEmotion": "contempt",
+            "isCorrect": true,
+            "difficulty": "subtle"
+          },
+          {
+            "correctEmotion": "angry",
+            "difficulty": "basic",
+            "stimulusType": "face",
+            "timestamp": "2025-09-21T16:02:11.142Z",
+            "selectedEmotion": "angry",
+            "emotionCategory": "negative",
+            "questionNumber": 12,
+            "isCorrect": true,
+            "responseTime": 1929
+          },
+          {
+            "questionNumber": 13,
+            "difficulty": "basic",
+            "isCorrect": true,
+            "responseTime": 1970,
+            "stimulusType": "face",
+            "correctEmotion": "disgusted",
+            "emotionCategory": "negative",
+            "selectedEmotion": "disgusted",
+            "timestamp": "2025-09-21T16:02:13.884Z"
+          },
+          {
+            "emotionCategory": "neutral",
+            "timestamp": "2025-09-21T16:02:15.682Z",
+            "questionNumber": 14,
+            "stimulusType": "face",
+            "isCorrect": true,
+            "responseTime": 964,
+            "correctEmotion": "surprised",
+            "difficulty": "basic",
+            "selectedEmotion": "surprised"
+          },
+          {
+            "questionNumber": 15,
+            "difficulty": "subtle",
+            "stimulusType": "face",
+            "isCorrect": true,
+            "correctEmotion": "melancholy",
+            "emotionCategory": "negative",
+            "responseTime": 2566,
+            "timestamp": "2025-09-21T16:02:18.904Z",
+            "selectedEmotion": "melancholy"
+          },
+          {
+            "timestamp": "2025-09-21T16:02:22.284Z",
+            "difficulty": "subtle",
+            "stimulusType": "face",
+            "selectedEmotion": "hopeful",
+            "isCorrect": true,
+            "correctEmotion": "hopeful",
+            "questionNumber": 16,
+            "responseTime": 2648,
+            "emotionCategory": "positive"
+          },
+          {
+            "timestamp": "2025-09-21T16:02:26.324Z",
+            "selectedEmotion": "amused",
+            "questionNumber": 17,
+            "responseTime": 3298,
+            "stimulusType": "face",
+            "emotionCategory": "positive",
+            "isCorrect": true,
+            "correctEmotion": "amused",
+            "difficulty": "subtle"
+          },
+          {
+            "isCorrect": false,
+            "stimulusType": "face",
+            "questionNumber": 18,
+            "selectedEmotion": "embarrassed",
+            "difficulty": "basic",
+            "emotionCategory": "positive",
+            "responseTime": 926,
+            "correctEmotion": "happy",
+            "timestamp": "2025-09-21T16:02:27.903Z"
+          },
+          {
+            "selectedEmotion": "embarrassed",
+            "timestamp": "2025-09-21T16:02:30.454Z",
+            "responseTime": 1536,
+            "isCorrect": false,
+            "difficulty": "basic",
+            "questionNumber": 19,
+            "stimulusType": "face",
+            "correctEmotion": "fear",
+            "emotionCategory": "negative"
+          },
+          {
+            "emotionCategory": "neutral",
+            "responseTime": 924,
+            "questionNumber": 20,
+            "isCorrect": true,
+            "selectedEmotion": "skeptical",
+            "timestamp": "2025-09-21T16:02:32.028Z",
+            "stimulusType": "face",
+            "difficulty": "subtle",
+            "correctEmotion": "skeptical"
+          }
+        ],
+        "rawData": {
+          "errorPatterns": {
+            "totalErrors": 6,
+            "errorRate": 30,
+            "commonMistakes": {
+              "fear_as_embarrassed": 1,
+              "disappointed_as_relieved": 1,
+              "happy_as_embarrassed": 1,
+              "guilty_as_embarrassed": 1,
+              "proud_as_relieved": 1,
+              "nostalgic_as_relieved": 1
+            }
+          },
+          "responseTimesByDifficulty": [
+            {
+              "difficulty": "basic",
+              "averageResponseTime": 1518.5,
+              "totalQuestions": 6
+            },
+            {
+              "totalQuestions": 6,
+              "difficulty": "complex",
+              "averageResponseTime": 3732.1666666666665
+            },
+            {
+              "totalQuestions": 8,
+              "difficulty": "subtle",
+              "averageResponseTime": 2999.875
+            }
+          ],
+          "performanceConsistency": {
+            "timeStandardDeviation": 2947.234403216005,
+            "accuracyStandardDeviation": 33.166247903554,
+            "consistencyScore": 63.88651769322999
+          },
+          "categoryAccuracy": [
+            {
+              "accuracy": 60,
+              "totalQuestions": 5,
+              "category": "positive",
+              "correctAnswers": 3
+            },
+            {
+              "accuracy": 70,
+              "totalQuestions": 10,
+              "correctAnswers": 7,
+              "category": "negative"
+            },
+            {
+              "totalQuestions": 5,
+              "category": "neutral",
+              "accuracy": 80,
+              "correctAnswers": 4
+            }
+          ]
+        },
+        "gameVersion": "1.0",
+        "gameMetadata": {
+          "gameVersion": "1.0",
+          "sessionId": "1758470476360",
+          "totalQuestions": 20,
+          "completedAt": "2025-09-21T16:02:35.621Z"
+        },
+        "userId": "user_1758470555622",
+        "timestamp": "2025-09-21T16:02:35.622Z"
+      }
+    ],
+    "memory_attention_game_results": [
+      {
+        "id": "mkGTw8krVwuuzmFpX08S",
+        "gameVersion": "1.0",
+        "gameData": {
+          "rounds": [
+            {
+              "recall": [
+                5,
+                5,
+                2
+              ],
+              "errors": [],
+              "correctCount": 3,
+              "distractorErrors": 0,
+              "sequenceLength": 3,
+              "responseTime": 3.63,
+              "hasDistractors": false,
+              "round": 1,
+              "sequence": [
+                5,
+                5,
+                2
+              ],
+              "accuracy": 100
+            },
+            {
+              "sequence": [
+                2,
+                5,
+                5,
+                5
+              ],
+              "round": 2,
+              "sequenceLength": 4,
+              "responseTime": 5.113,
+              "accuracy": 100,
+              "errors": [],
+              "distractorErrors": 0,
+              "hasDistractors": false,
+              "recall": [
+                2,
+                5,
+                5,
+                5
+              ],
+              "correctCount": 4
+            },
+            {
+              "accuracy": 100,
+              "distractorErrors": 0,
+              "errors": [],
+              "hasDistractors": false,
+              "recall": [
+                1,
+                3,
+                3,
+                3
+              ],
+              "sequence": [
+                1,
+                3,
+                3,
+                3
+              ],
+              "correctCount": 4,
+              "responseTime": 4.175,
+              "round": 3,
+              "sequenceLength": 4
+            },
+            {
+              "responseTime": 4.686,
+              "correctCount": 4,
+              "round": 4,
+              "distractorErrors": 0,
+              "recall": [
+                1,
+                3,
+                1,
+                3,
+                3
+              ],
+              "sequenceLength": 5,
+              "sequence": [
+                1,
+                3,
+                1,
+                3,
+                5
+              ],
+              "errors": [
+                {
+                  "expected": 5,
+                  "type": "misplacing",
+                  "position": 4,
+                  "actual": 3
+                }
+              ],
+              "hasDistractors": true,
+              "accuracy": 80
+            },
+            {
+              "responseTime": 2.603,
+              "distractorErrors": 1,
+              "round": 5,
+              "hasDistractors": true,
+              "sequence": [
+                0,
+                1,
+                5,
+                1,
+                1
+              ],
+              "recall": [
+                2,
+                1
+              ],
+              "correctCount": 1,
+              "errors": [
+                {
+                  "actual": 2,
+                  "expected": 0,
+                  "type": "misremembering",
+                  "position": 0
+                },
+                {
+                  "expected": 5,
+                  "actual": null,
+                  "position": 2,
+                  "type": "misremembering"
+                },
+                {
+                  "actual": null,
+                  "position": 3,
+                  "expected": 1,
+                  "type": "misremembering"
+                },
+                {
+                  "position": 4,
+                  "type": "misremembering",
+                  "actual": null,
+                  "expected": 1
+                }
+              ],
+              "accuracy": 20,
+              "sequenceLength": 5
+            },
+            {
+              "sequence": [
+                5,
+                2,
+                5,
+                5,
+                2,
+                0
+              ],
+              "hasDistractors": true,
+              "accuracy": 0,
+              "errors": [
+                {
+                  "actual": 2,
+                  "type": "misplacing",
+                  "expected": 5,
+                  "position": 0
+                },
+                {
+                  "position": 1,
+                  "expected": 2,
+                  "type": "misremembering",
+                  "actual": 1
+                },
+                {
+                  "type": "misplacing",
+                  "expected": 5,
+                  "position": 2,
+                  "actual": 0
+                },
+                {
+                  "actual": null,
+                  "type": "misremembering",
+                  "expected": 5,
+                  "position": 3
+                },
+                {
+                  "position": 4,
+                  "expected": 2,
+                  "type": "misremembering",
+                  "actual": null
+                },
+                {
+                  "position": 5,
+                  "actual": null,
+                  "expected": 0,
+                  "type": "misremembering"
+                }
+              ],
+              "distractorErrors": 0,
+              "round": 6,
+              "recall": [
+                2,
+                1,
+                0
+              ],
+              "responseTime": 3.357,
+              "sequenceLength": 6,
+              "correctCount": 0
+            },
+            {
+              "responseTime": 5.796,
+              "distractorErrors": 0,
+              "recall": [
+                0,
+                2,
+                0,
+                1,
+                2,
+                3
+              ],
+              "correctCount": 5,
+              "sequence": [
+                0,
+                2,
+                0,
+                1,
+                2,
+                2
+              ],
+              "sequenceLength": 6,
+              "round": 7,
+              "accuracy": 83.33333333333334,
+              "hasDistractors": true,
+              "errors": [
+                {
+                  "actual": 3,
+                  "type": "misremembering",
+                  "position": 5,
+                  "expected": 2
+                }
+              ]
+            },
+            {
+              "hasDistractors": true,
+              "distractorErrors": 0,
+              "sequence": [
+                2,
+                5,
+                1,
+                4,
+                5,
+                1,
+                5
+              ],
+              "round": 8,
+              "recall": [
+                2,
+                5,
+                2,
+                1,
+                0,
+                3
+              ],
+              "sequenceLength": 7,
+              "accuracy": 28.57142857142857,
+              "correctCount": 2,
+              "responseTime": 6.024,
+              "errors": [
+                {
+                  "type": "misplacing",
+                  "expected": 1,
+                  "actual": 2,
+                  "position": 2
+                },
+                {
+                  "expected": 4,
+                  "actual": 1,
+                  "position": 3,
+                  "type": "misplacing"
+                },
+                {
+                  "actual": 0,
+                  "expected": 5,
+                  "position": 4,
+                  "type": "misremembering"
+                },
+                {
+                  "actual": 3,
+                  "type": "misremembering",
+                  "expected": 1,
+                  "position": 5
+                },
+                {
+                  "type": "misremembering",
+                  "expected": 5,
+                  "actual": null,
+                  "position": 6
+                }
+              ]
+            }
+          ],
+          "gameType": "Memory & Attention Game",
+          "summary": {
+            "distractorErrors": 1,
+            "avgResponseTime": 4.423,
+            "totalErrors": 17,
+            "misrememberingErrors": 12,
+            "timeStdDev": 1.1254281407535534,
+            "accuracyStdDev": 38.413800120302334,
+            "performanceTrend": "Declining",
+            "misplacingErrors": 5,
+            "overallAccuracy": 57.49999999999999
+          },
+          "rawData": {
+            "accuracyRates": [
+              {
+                "totalItems": 3,
+                "round": 1,
+                "correctItems": 3,
+                "accuracy": 100
+              },
+              {
+                "accuracy": 100,
+                "totalItems": 4,
+                "correctItems": 4,
+                "round": 2
+              },
+              {
+                "round": 3,
+                "totalItems": 4,
+                "correctItems": 4,
+                "accuracy": 100
+              },
+              {
+                "correctItems": 4,
+                "accuracy": 80,
+                "totalItems": 5,
+                "round": 4
+              },
+              {
+                "accuracy": 20,
+                "totalItems": 5,
+                "round": 5,
+                "correctItems": 1
+              },
+              {
+                "totalItems": 6,
+                "round": 6,
+                "accuracy": 0,
+                "correctItems": 0
+              },
+              {
+                "correctItems": 5,
+                "totalItems": 6,
+                "round": 7,
+                "accuracy": 83.33333333333334
+              },
+              {
+                "totalItems": 7,
+                "correctItems": 2,
+                "round": 8,
+                "accuracy": 28.57142857142857
+              }
+            ],
+            "errorAnalysis": [
+              {
+                "errors": [],
+                "round": 1
+              },
+              {
+                "round": 2,
+                "errors": []
+              },
+              {
+                "round": 3,
+                "errors": []
+              },
+              {
+                "errors": [
+                  {
+                    "errorType": "misplacing",
+                    "position": 4,
+                    "expectedItem": 5,
+                    "actualItem": 3
+                  }
+                ],
+                "round": 4
+              },
+              {
+                "round": 5,
+                "errors": [
+                  {
+                    "actualItem": 2,
+                    "errorType": "misremembering",
+                    "position": 0,
+                    "expectedItem": 0
+                  },
+                  {
+                    "actualItem": null,
+                    "errorType": "misremembering",
+                    "position": 2,
+                    "expectedItem": 5
+                  },
+                  {
+                    "position": 3,
+                    "errorType": "misremembering",
+                    "expectedItem": 1,
+                    "actualItem": null
+                  },
+                  {
+                    "position": 4,
+                    "expectedItem": 1,
+                    "actualItem": null,
+                    "errorType": "misremembering"
+                  }
+                ]
+              },
+              {
+                "errors": [
+                  {
+                    "position": 0,
+                    "actualItem": 2,
+                    "errorType": "misplacing",
+                    "expectedItem": 5
+                  },
+                  {
+                    "expectedItem": 2,
+                    "actualItem": 1,
+                    "errorType": "misremembering",
+                    "position": 1
+                  },
+                  {
+                    "errorType": "misplacing",
+                    "position": 2,
+                    "actualItem": 0,
+                    "expectedItem": 5
+                  },
+                  {
+                    "errorType": "misremembering",
+                    "position": 3,
+                    "actualItem": null,
+                    "expectedItem": 5
+                  },
+                  {
+                    "expectedItem": 2,
+                    "actualItem": null,
+                    "errorType": "misremembering",
+                    "position": 4
+                  },
+                  {
+                    "expectedItem": 0,
+                    "errorType": "misremembering",
+                    "position": 5,
+                    "actualItem": null
+                  }
+                ],
+                "round": 6
+              },
+              {
+                "errors": [
+                  {
+                    "position": 5,
+                    "errorType": "misremembering",
+                    "actualItem": 3,
+                    "expectedItem": 2
+                  }
+                ],
+                "round": 7
+              },
+              {
+                "round": 8,
+                "errors": [
+                  {
+                    "errorType": "misplacing",
+                    "actualItem": 2,
+                    "expectedItem": 1,
+                    "position": 2
+                  },
+                  {
+                    "position": 3,
+                    "errorType": "misplacing",
+                    "actualItem": 1,
+                    "expectedItem": 4
+                  },
+                  {
+                    "errorType": "misremembering",
+                    "actualItem": 0,
+                    "position": 4,
+                    "expectedItem": 5
+                  },
+                  {
+                    "actualItem": 3,
+                    "position": 5,
+                    "expectedItem": 1,
+                    "errorType": "misremembering"
+                  },
+                  {
+                    "expectedItem": 5,
+                    "errorType": "misremembering",
+                    "position": 6,
+                    "actualItem": null
+                  }
+                ]
+              }
+            ],
+            "performanceConsistency": {
+              "timesByRound": [
+                3.63,
+                5.113,
+                4.175,
+                4.686,
+                2.603,
+                3.357,
+                5.796,
+                6.024
+              ],
+              "timeStandardDeviation": 1.1254281407535534,
+              "accuracyStandardDeviation": 38.413800120302334,
+              "accuracyByRound": [
+                100,
+                100,
+                100,
+                80,
+                20,
+                0,
+                83.33333333333334,
+                28.57142857142857
+              ]
+            },
+            "distractorErrors": [
+              {
+                "hasDistractors": false,
+                "distractorErrors": 0,
+                "round": 1
+              },
+              {
+                "distractorErrors": 0,
+                "round": 2,
+                "hasDistractors": false
+              },
+              {
+                "distractorErrors": 0,
+                "round": 3,
+                "hasDistractors": false
+              },
+              {
+                "hasDistractors": true,
+                "round": 4,
+                "distractorErrors": 0
+              },
+              {
+                "round": 5,
+                "distractorErrors": 1,
+                "hasDistractors": true
+              },
+              {
+                "distractorErrors": 0,
+                "hasDistractors": true,
+                "round": 6
+              },
+              {
+                "round": 7,
+                "distractorErrors": 0,
+                "hasDistractors": true
+              },
+              {
+                "hasDistractors": true,
+                "distractorErrors": 0,
+                "round": 8
+              }
+            ],
+            "responseTimes": [
+              {
+                "round": 1,
+                "responseTime": 3.63
+              },
+              {
+                "responseTime": 5.113,
+                "round": 2
+              },
+              {
+                "responseTime": 4.175,
+                "round": 3
+              },
+              {
+                "round": 4,
+                "responseTime": 4.686
+              },
+              {
+                "responseTime": 2.603,
+                "round": 5
+              },
+              {
+                "responseTime": 3.357,
+                "round": 6
+              },
+              {
+                "responseTime": 5.796,
+                "round": 7
+              },
+              {
+                "round": 8,
+                "responseTime": 6.024
+              }
+            ]
+          },
+          "gameMetadata": {
+            "totalRounds": 8,
+            "gameVersion": "1.0",
+            "completedAt": "2025-09-21T16:01:15.956Z"
+          }
+        },
+        "timestamp": "2025-09-21T16:01:15.958Z",
+        "gameType": "Memory & Attention Game",
+        "analysis": {
+          "avgResponseTime": 4.423,
+          "misrememberingErrors": 12,
+          "totalErrors": 17,
+          "misplacingErrors": 5,
+          "accuracyStdDev": 38.413800120302334,
+          "distractorErrors": 1,
+          "overallAccuracy": 57.49999999999999,
+          "performanceTrend": "Declining",
+          "timeStdDev": 1.1254281407535534
+        },
+        "userId": "user_1758470475958",
+        "formattedData": {
+          "memory_attention_game": {
+            "average_response_time_ms": 4423,
+            "error_type": "misremembering",
+            "performance_consistency": "medium",
+            "average_accuracy": 63.98809523809524,
+            "distraction_errors": 0
+          }
+        }
+      }
+    ],
+    "open_ended_questions_results": [
+      {
+        "id": "CwWJghWmsbt7adrjpc7d",
+        "gameVersion": "1.0",
+        "gameMetadata": {
+          "sessionId": "1758471026380",
+          "completedAt": "2025-09-21T16:10:26.380Z",
+          "totalQuestions": 5,
+          "gameVersion": "1.0"
+        },
+        "rawData": {
+          "responseAnalysis": [
+            {
+              "timestamp": "2025-09-21T16:05:45.129Z",
+              "question": "What is one accomplishment you're most proud of, and what role did you play in it?",
+              "wordCount": 4,
+              "characterCount": 16,
+              "response": "As a team leader"
+            },
+            {
+              "timestamp": "2025-09-21T16:05:56.321Z",
+              "question": "If money were no object, what kind of work would you be doing?",
+              "wordCount": 5,
+              "response": "Work for the poor people",
+              "characterCount": 24
+            },
+            {
+              "characterCount": 36,
+              "response": "I would love to solve global warming",
+              "question": "What's a problem in the world you would like to help solve?",
+              "timestamp": "2025-09-21T16:06:18.112Z",
+              "wordCount": 7
+            },
+            {
+              "characterCount": 56,
+              "wordCount": 11,
+              "response": "I have learned to develop App using AI tools like cursor",
+              "question": "What's a skill you've learned recently, and how did you learn it?",
+              "timestamp": "2025-09-21T16:09:51.231Z"
+            },
+            {
+              "characterCount": 51,
+              "question": "Describe a time you worked as part of a team. What was your role?",
+              "response": "I have worked as team leader, smart india hackthon.",
+              "timestamp": "2025-09-21T16:10:26.378Z",
+              "wordCount": 9
+            }
+          ]
+        },
+        "timestamp": "2025-09-21T16:10:26.382Z",
+        "insights": {
+          "responses": [
+            {
+              "response": "As a team leader",
+              "questionText": "What is one accomplishment you're most proud of, and what role did you play in it?",
+              "timestamp": "2025-09-21T16:05:45.129Z",
+              "questionId": 1
+            },
+            {
+              "questionId": 2,
+              "questionText": "If money were no object, what kind of work would you be doing?",
+              "timestamp": "2025-09-21T16:05:56.321Z",
+              "response": "Work for the poor people"
+            },
+            {
+              "questionText": "What's a problem in the world you would like to help solve?",
+              "response": "I would love to solve global warming",
+              "questionId": 3,
+              "timestamp": "2025-09-21T16:06:18.112Z"
+            },
+            {
+              "questionText": "What's a skill you've learned recently, and how did you learn it?",
+              "questionId": 4,
+              "response": "I have learned to develop App using AI tools like cursor",
+              "timestamp": "2025-09-21T16:09:51.231Z"
+            },
+            {
+              "timestamp": "2025-09-21T16:10:26.378Z",
+              "questionText": "Describe a time you worked as part of a team. What was your role?",
+              "questionId": 5,
+              "response": "I have worked as team leader, smart india hackthon."
+            }
+          ],
+          "timestamp": "2025-09-21T16:10:26.378Z",
+          "nlpAnalysis": [
+            {
+              "framework": "self_efficacy",
+              "wordCount": 4,
+              "confidence": 0.9715157613148366,
+              "sentiment": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+              },
+              "keywords": [
+                "team",
+                "leader"
+              ],
+              "traits": [
+                "confident"
+              ]
+            },
+            {
+              "confidence": 0.9938887795300688,
+              "keywords": [
+                "work",
+                "poor",
+                "people"
+              ],
+              "wordCount": 5,
+              "traits": [
+                "passionate"
+              ],
+              "framework": "intrinsic_motivation",
+              "sentiment": {
+                "neutral": 1,
+                "positive": 0,
+                "negative": 0
+              }
+            },
+            {
+              "keywords": [
+                "love",
+                "solve",
+                "global",
+                "warming"
+              ],
+              "sentiment": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+              },
+              "traits": [
+                "empathetic"
+              ],
+              "wordCount": 7,
+              "confidence": 0.8349300777102749,
+              "framework": "social_purpose"
+            },
+            {
+              "sentiment": {
+                "neutral": 1,
+                "negative": 0,
+                "positive": 0
+              },
+              "confidence": 0.8368036319658002,
+              "wordCount": 11,
+              "traits": [
+                "persistent"
+              ],
+              "keywords": [
+                "learned",
+                "develop",
+                "using",
+                "tools",
+                "like"
+              ],
+              "framework": "growth_mindset"
+            },
+            {
+              "wordCount": 9,
+              "confidence": 0.9459712147733242,
+              "traits": [
+                "collaborative"
+              ],
+              "keywords": [
+                "worked",
+                "team",
+                "leader",
+                "smart",
+                "india"
+              ],
+              "sentiment": {
+                "positive": 0,
+                "negative": 0,
+                "neutral": 1
+              },
+              "framework": "collaboration"
+            }
+          ],
+          "aggregateInsights": {
+            "careerAlignment": [
+              "Social Impact Roles",
+              "Healthcare",
+              "Education",
+              "Innovation Roles",
+              "Startups",
+              "R&D"
+            ],
+            "overallSentiment": {
+              "negative": 0,
+              "positive": 0.2,
+              "neutral": 0.8
+            },
+            "dominantTraits": [
+              "confident",
+              "passionate",
+              "empathetic",
+              "growth-oriented",
+              "supportive"
+            ],
+            "keyThemes": [
+              "team",
+              "leader",
+              "work",
+              "poor",
+              "people",
+              "love",
+              "solve",
+              "global",
+              "warming",
+              "learned"
+            ]
+          }
+        },
+        "userId": "user_1758471026381",
+        "responses": [
+          {
+            "timestamp": "2025-09-21T16:05:45.129Z",
+            "questionText": "What is one accomplishment you're most proud of, and what role did you play in it?",
+            "response": "As a team leader",
+            "questionId": 1
+          },
+          {
+            "response": "Work for the poor people",
+            "questionId": 2,
+            "questionText": "If money were no object, what kind of work would you be doing?",
+            "timestamp": "2025-09-21T16:05:56.321Z"
+          },
+          {
+            "response": "I would love to solve global warming",
+            "questionText": "What's a problem in the world you would like to help solve?",
+            "timestamp": "2025-09-21T16:06:18.112Z",
+            "questionId": 3
+          },
+          {
+            "response": "I have learned to develop App using AI tools like cursor",
+            "questionText": "What's a skill you've learned recently, and how did you learn it?",
+            "timestamp": "2025-09-21T16:09:51.231Z",
+            "questionId": 4
+          },
+          {
+            "response": "I have worked as team leader, smart india hackthon.",
+            "questionId": 5,
+            "questionText": "Describe a time you worked as part of a team. What was your role?",
+            "timestamp": "2025-09-21T16:10:26.378Z"
+          }
+        ],
+        "gameType": "Open-Ended Questions"
+      }
+    ]
+  },
+  "careerProfile": "**Executive Summary**\n\nThis student demonstrates a strong growth mindset and a blend of leadership capabilities and empathetic concern for others.  Their problem-solving skills are notable, though a slightly risk-averse approach is evident.  High interpersonal intelligence is balanced by a developing logical-mathematical aptitude.  RIASEC code: SEA.\n\n\n**Your Strengths (Evidence-Based)**\n\n1. **Leadership Potential** →  Repeated mentions of \"team leader\" in open-ended responses +  Successful navigation of the Balloon Pump Game (total score 160) → supports Interpersonal MI and Enterprising Holland.\n2. **Empathy & Social Awareness** → 70% accuracy in Emotion Recognition Game, particularly strong in negative emotion recognition (70% accuracy) → supports Interpersonal MI and Agreeableness Big Five.  Desire to \"work for the poor people\" in open-ended responses further reinforces this.\n3. **Growth Mindset & Adaptability** →  Successfully learned app development (\"I have learned to develop App using AI tools\")  +  Increasingly cautious behavior in Balloon Pump Game (\"More risk-averse over time\") → supports Growth Mindset (Open-Ended Responses) and Conscientiousness Big Five (adapting strategy).\n4. **Problem-Solving Skills** → While Memory & Attention game shows a declining performance trend, initial rounds demonstrated strong accuracy (100% in rounds 1-3), indicating potential for focused improvement → supports Logical-Mathematical MI.\n\n\n**Top Career Matches**\n\n1. **Software Developer with a Social Impact Focus**\nWhy it fits: (a) Demonstrated app development skills (\"I have learned to develop App using AI tools\"), (b) Strong growth mindset and problem-solving abilities (Memory & Attention Game initial rounds), (c) Desire to \"solve global warming\" and \"work for the poor people\".  This combines their technical skills with their social conscience.\nNext Step: Explore online coding bootcamps or local vocational training programs focusing on app development. Consider volunteer work with NGOs to gain experience in the social sector.\n\n2. **Data Analyst for a Non-Profit Organization**\nWhy it fits: (a)  Strong emotional intelligence (Emotion Recognition Game), (b)  Logical-mathematical reasoning demonstrated in the initial phases of the Memory & Attention Game, (c) Deep interest in solving global issues (\"I would love to solve global warming\"). Analyzing data to inform social programs aligns well with their interests and abilities.\nNext Step: Pursue a data analytics certification course (many affordable options online).  Network with NGOs and look for volunteer opportunities involving data analysis.\n\n3. **Project Manager in the Social Sector**\nWhy it fits: (a) Experience leading teams (\"I have worked as team leader, smart india hackthon\"), (b) High interpersonal intelligence and Agreeableness, (c)  Strong desire for social impact.  Managing projects within NGOs or social enterprises leverages their leadership skills and social commitment.\nNext Step: Look for entry-level project management roles in local NGOs or volunteer to lead small projects. Consider online project management courses or workshops.\n\n4. **Backup Traditional Option:  Bank Teller/Accountant**\nWhy it fits: This offers a stable career path with a clear educational pathway (Commerce degree), providing parents with reassurance about job security and earning potential. The role demands attention to detail and accuracy, skills evident in early phases of the Memory & Attention game.\nNext Step: Complete 12th standard with Commerce, followed by a Bachelor's degree in Commerce (B.Com) and potentially a professional accounting certification (CA/CMA).\n\n\n**Family-Friendly One-Page Summary**\n\n[Student's Name]'s Career Profile\nStrong Skills: Good with computers, understanding people, good problem-solver,  team leader.\nRecommended Career Paths:\n\nSoftware Developer → Uses computer skills to help others.\nData Analyst for a good cause → Uses smart thinking to help people.\nProject Manager for an NGO → Leads teams to make a difference.\nBank Teller/Accountant → Stable job with good growth prospects.\n\n\nNext Steps for Your Child:\n\nTry online coding courses.\nVolunteer with an NGO.\nConsider a degree in Commerce or IT.\n\n\n**Parent Conversation Script**\n\n\"[Student's Name]'s assessment shows they have strong strengths in leadership and helping others. The games show they are a good problem-solver, especially initially, and very good at understanding people's feelings.  We've identified roles like software development or data analysis focusing on social issues as excellent fits. A more traditional path like banking or accounting is also a strong option, if preferred.  All recommendations include clear and affordable steps to pursue these opportunities, whether online courses, volunteering, or further education.\"\n\n\n**Quick Skill Roadmap**\n\n1. **Learn Basic Coding** - [FreeCodeCamp, Codecademy]\n2. **Volunteer at a Local NGO** - [Search online for local NGOs needing volunteers]\n3. **Attend a Project Management Workshop** - [Check local community centers or online platforms]\n\n\n**Flags (If Applicable)**\n\nNo significant conflicts between game behavior and self-reported answers were detected.\n\n\n**Critical Cultural Requirements**\n\nFamily Context Sensitivity: All recommendations emphasize clear educational pathways and stable career options to address parental concerns about job security and earning potential.  The inclusion of a traditional backup option caters to family preferences for stable employment. India-Specific Considerations:  Emphasis is placed on low-cost/local training pathways (online courses, vocational training, local NGOs), addressing common concerns about affordability and accessibility.  Regional employment opportunities are mentioned as well as urban ones. The backup option is specifically tailored to culturally relevant career paths with a clear educational pathway.\n\n\n",
+  "metadata": {
+    "totalAssessments": 5,
+    "geminiModel": "gemini-pro",
+    "processingTime": "2025-09-21T16:26:20.957Z"
+  }
+}

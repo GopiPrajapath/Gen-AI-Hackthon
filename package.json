@@ -1,0 +1,23 @@
+{
+  "name": "gen-ai-hackthon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-backend": "node server.js",
+    "start-frontend": "live-server ../../Frontend",
+    "start-all": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

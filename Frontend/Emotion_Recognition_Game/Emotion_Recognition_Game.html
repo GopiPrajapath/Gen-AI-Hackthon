@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="Emotion_Recognition_Game.css">
+    <script type="module" src="Emotion_Recognition_Game.js" defer></script>
+    
+    <title>Emotion Recognition Game</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="game-screen active">
+            <h1>Emotion Recognition Game</h1>
+            <p class="subtitle">Test your emotional intelligence and empathy skills</p>
+            
+            <div class="emotion-display">
+                <div class="emotion-face">😊🤔😢😠🤗</div>
+            </div>
+            
+            <p style="font-size: 1.1em; margin: 20px 0; color: #495057; line-height: 1.6;">
+                This game will test your ability to recognize and interpret human emotions through facial expressions and scenarios. 
+                You'll encounter both basic emotions (happy, sad, angry) and more subtle, complex emotions (envy, disappointment, curiosity).
+            </p>
+            
+            <div style="background: #e9ecef; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <h3 style="color: #495057; margin-bottom: 10px;">What we'll measure:</h3>
+                <ul style="text-align: left; color: #6c757d; line-height: 1.8;">
+                    <li>Accuracy of emotion identification</li>
+                    <li>Speed of recognition</li>
+                    <li>Performance on subtle vs basic emotions</li>
+                    <li>Recognition patterns across emotion categories</li>
+                    <li>Discrepancies in emotional interpretation</li>
+                </ul>
+            </div>
+            
+            <button class="btn-primary" onclick="startGame()">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="game-screen">
+            <div class="timer" id="timer">Time: 0s</div>
+            
+            <div class="question-info">
+                <span id="question-counter">Question 1 of 20</span>
+                <span id="difficulty-badge" class="difficulty-badge"></span>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+
+            <div class="emotion-display" id="emotion-display">
+                <div class="emotion-face" id="emotion-face">😊</div>
+                <div class="emotion-description" id="emotion-description" style="display: none;"></div>
+            </div>
+
+            <div class="options-grid" id="options-grid">
+                <!-- Options will be dynamically generated -->
+            </div>
+
+            <div id="feedback" class="feedback" style="display: none;"></div>
+
+            <button class="btn-primary" id="next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="game-screen">
+            <h1>Your Results</h1>
+            <p class="subtitle">Emotional Intelligence Assessment Complete</p>
+
+            <div class="results-grid" id="results-grid">
+                <!-- Results will be dynamically generated -->
+            </div>
+
+            <div class="category-breakdown">
+                <h3 style="margin-bottom: 20px; color: #495057;">Performance by Category</h3>
+                <div id="category-results">
+                    <!-- Category breakdown will be generated -->
+                </div>
+            </div>
+
+            <!-- Navigation Section -->
+            <div class="navigation-section">
+                <h3>Assessment Progress</h3>
+                <div class="progress-indicator">
+                    <div class="step completed">1. Balloon Pump</div>
+                    <div class="step completed">2. Memory & Attention</div>
+                    <div class="step current">3. Emotion Recognition</div>
+                    <div class="step">4. Creative Problem Solving</div>
+                    <div class="step">5. Open-Ended Questions</div>
+                </div>
+                <button class="btn-next" onclick="proceedToNextGame()" id="nextGameBtn">
+                    ➡️ Next: Creative Problem Solving Challenge
+                </button>
+            </div>
+
+            <div class="export-section">
+                <h3 style="color: #495057; margin-bottom: 15px;">Export Your Results</h3>
+                <p style="color: #6c757d; margin-bottom: 20px;">Download your detailed performance data for further analysis</p>
+                <button class="btn-secondary" onclick="exportJSON()">Export as JSON</button>
+                <button class="btn-secondary" onclick="exportCSV()">Export as CSV</button>
+            </div>
+
+            <button class="btn-primary" onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+ </body>
+</html>

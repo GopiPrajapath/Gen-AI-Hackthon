@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="balloon-pump-game.css">
+    <script type="module" src="balloon-pump-game.js"></script>
+    <title>Balloon Pump Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">🎈 Balloon Pump Game</h1>
+        
+        <div class="game-stats">
+            <div class="stat-card">
+                <div>Round</div>
+                <div id="currentRound">1</div>
+            </div>
+            <div class="stat-card">
+                <div>Total Score</div>
+                <div id="totalScore">0</div>
+            </div>
+            <div class="stat-card">
+                <div>Pops</div>
+                <div id="totalPops">0</div>
+            </div>
+            <div class="stat-card">
+                <div>Success Rate</div>
+                <div id="successRate">0%</div>
+            </div>
+        </div>
+
+        <div class="balloon-container">
+            <div class="balloon" id="balloon"></div>
+        </div>
+
+        <div class="current-reward">
+            Current Reward: $<span id="currentReward">0</span>
+        </div>
+
+        <div class="round-info">
+            <div>Pumps This Round: <span id="pumpCount">0</span></div>
+            <div>Burst Threshold: Hidden</div>
+        </div>
+
+        <div class="controls">
+            <button class="btn pump-btn" id="pumpBtn" onclick="pump()">
+                💨 PUMP (+$10)
+            </button>
+            <button class="btn cashout-btn" id="cashoutBtn" onclick="cashOut()">
+                💰 CASH OUT
+            </button>
+        </div>
+
+        <div id="messageArea"></div>
+
+        <div class="data-export">
+            <h3>Data Export & Analysis</h3>
+            <p>Rounds Completed: <span id="roundsCompleted">0</span></p>
+            <button class="export-btn" onclick="exportJSON()">📊 Export JSON</button>
+            <button class="export-btn" onclick="exportCSV()">📈 Export CSV</button>
+            <button class="export-btn" onclick="showAnalysis()">🔍 Show Analysis</button>
+            <button class="export-btn" onclick="resetGame()">🔄 Reset Game</button>
+        </div>
+
+        <!-- Navigation Section -->
+        <div class="navigation-section">
+            <h3>Assessment Progress</h3>
+            <div class="progress-indicator">
+                <div class="step completed">1. Balloon Pump</div>
+                <div class="step">2. Memory & Attention</div>
+                <div class="step">3. Emotion Recognition</div>
+                <div class="step">4. Creative Problem Solving</div>
+                <div class="step">5. Open-Ended Questions</div>
+            </div>
+            <button class="btn btn-next" onclick="proceedToNextGame()" id="nextGameBtn" style="display: none;">
+                ➡️ Next: Memory & Attention Game
+            </button>
+        </div>
+    </div>
+
+   
+</body>
+</html>
